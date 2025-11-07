@@ -1,0 +1,289 @@
+{
+  "demo_pole_inspection": {
+    "id": "demo_pole_inspection",
+    "title": "Electrical Pole Inspection Form",
+    "prompt": "Demo: Electrical pole inspection with voltage monitoring",
+    "schema": {
+      "title": "Electrical Pole Inspection Form",
+      "fields": [
+        {
+          "name": "inspector_name",
+          "label": "Inspector Name",
+          "type": "string",
+          "required": true,
+          "placeholder": "Enter your full name"
+        },
+        {
+          "name": "pole_id",
+          "label": "Pole ID",
+          "type": "string",
+          "required": true,
+          "placeholder": "e.g., POLE-2024-001"
+        },
+        {
+          "name": "inspection_date",
+          "label": "Inspection Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "voltage",
+          "label": "Voltage Reading (V)",
+          "type": "number",
+          "required": true,
+          "min": 0,
+          "max": 1000,
+          "notifyIf": ">400",
+          "placeholder": "Enter voltage in volts"
+        },
+        {
+          "name": "pole_condition",
+          "label": "Pole Condition",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Excellent",
+            "Good",
+            "Fair",
+            "Poor",
+            "Critical"
+          ]
+        },
+        {
+          "name": "photos",
+          "label": "Inspection Photos",
+          "type": "file",
+          "required": false
+        },
+        {
+          "name": "remarks",
+          "label": "Additional Remarks",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Any additional observations..."
+        }
+      ]
+    },
+    "createdAt": "2025-10-25T17:58:17.680Z"
+  },
+  "demo_equipment_maintenance": {
+    "id": "demo_equipment_maintenance",
+    "title": "Equipment Maintenance Log",
+    "prompt": "Demo: Equipment maintenance tracking",
+    "schema": {
+      "title": "Equipment Maintenance Log",
+      "fields": [
+        {
+          "name": "equipment_id",
+          "label": "Equipment ID",
+          "type": "string",
+          "required": true,
+          "placeholder": "EQ-2024-XXX"
+        },
+        {
+          "name": "technician_name",
+          "label": "Technician Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "technician_email",
+          "label": "Technician Email",
+          "type": "email",
+          "required": true,
+          "placeholder": "technician@example.com"
+        },
+        {
+          "name": "maintenance_date",
+          "label": "Maintenance Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "hours_worked",
+          "label": "Hours Worked",
+          "type": "number",
+          "required": true,
+          "min": 0,
+          "max": 24
+        },
+        {
+          "name": "parts_replaced",
+          "label": "Parts Replaced",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "List parts that were replaced..."
+        },
+        {
+          "name": "condition_rating",
+          "label": "Equipment Condition",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Excellent",
+            "Good",
+            "Fair",
+            "Poor",
+            "Critical"
+          ]
+        },
+        {
+          "name": "requires_followup",
+          "label": "Requires Follow-up",
+          "type": "boolean",
+          "required": false
+        }
+      ]
+    },
+    "createdAt": "2025-10-25T17:58:17.681Z"
+  },
+  "demo_safety_audit": {
+    "id": "demo_safety_audit",
+    "title": "Site Safety Audit Form",
+    "prompt": "Demo: Safety audit with scoring",
+    "schema": {
+      "title": "Site Safety Audit Form",
+      "fields": [
+        {
+          "name": "auditor_name",
+          "label": "Auditor Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "site_location",
+          "label": "Site Location",
+          "type": "string",
+          "required": true,
+          "placeholder": "Enter site address or identifier"
+        },
+        {
+          "name": "audit_date",
+          "label": "Audit Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "safety_score",
+          "label": "Safety Score (0-100)",
+          "type": "number",
+          "required": true,
+          "min": 0,
+          "max": 100,
+          "notifyIf": "<70",
+          "placeholder": "Overall safety rating"
+        },
+        {
+          "name": "hazards_identified",
+          "label": "Hazards Identified",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "List all identified hazards..."
+        },
+        {
+          "name": "corrective_actions",
+          "label": "Corrective Actions Required",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "List required corrective actions..."
+        },
+        {
+          "name": "audit_photos",
+          "label": "Audit Photos",
+          "type": "file",
+          "required": false
+        }
+      ]
+    },
+    "createdAt": "2025-10-25T17:58:17.681Z"
+  },
+  "schema_1762526571864_y4fiyleuh": {
+    "id": "schema_1762526571864_y4fiyleuh",
+    "title": "Customer Service Ticket Form",
+    "schema": {
+      "title": "Customer Service Ticket Form",
+      "fields": [
+        {
+          "name": "customer_name",
+          "label": "Customer Name",
+          "type": "string",
+          "required": true,
+          "placeholder": "Enter customer's full name"
+        },
+        {
+          "name": "customer_email",
+          "label": "Email Address",
+          "type": "email",
+          "required": true,
+          "placeholder": "e.g., customer@example.com"
+        },
+        {
+          "name": "phone_number",
+          "label": "Phone Number",
+          "type": "string",
+          "required": false,
+          "placeholder": "e.g., (123) 456-7890"
+        },
+        {
+          "name": "issue_type",
+          "label": "Issue Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "billing",
+            "technical",
+            "general"
+          ]
+        },
+        {
+          "name": "priority_level",
+          "label": "Priority Level",
+          "type": "select",
+          "required": true,
+          "options": [
+            "low",
+            "medium",
+            "high",
+            "urgent"
+          ]
+        },
+        {
+          "name": "issue_description",
+          "label": "Description of Issue",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Please provide a detailed description of your issue."
+        }
+      ]
+    },
+    "prompt": "Create a customer service ticket form with customer name, email, phone number, issue type (billing, technical, general), priority level (low, medium, high, urgent), and description of issue",
+    "createdAt": "2025-11-07T14:42:51.869Z"
+  },
+  "schema_1762527032572_hx2swoerm": {
+    "id": "schema_1762527032572_hx2swoerm",
+    "title": "User Information Form",
+    "schema": {
+      "title": "User Information Form",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "string",
+          "required": true,
+          "placeholder": "Enter your full name"
+        },
+        {
+          "name": "age",
+          "label": "Age",
+          "type": "number",
+          "required": true,
+          "placeholder": "Enter your age",
+          "min": 0,
+          "max": 150
+        }
+      ]
+    },
+    "prompt": "create a form with name and age ",
+    "createdAt": "2025-11-07T14:50:32.575Z"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "demo_pole_inspection": [
+    {
+      "data": {
+        "inspector_name": "John Smith",
+        "pole_id": "POLE-2024-001",
+        "inspection_date": "2024-10-20",
+        "voltage": 380,
+        "pole_condition": "Good",
+        "remarks": "Minor wear on base, recommended for monitoring"
+      },
+      "notifications": [],
+      "submittedAt": "2024-10-20T10:30:00.000Z"
+    },
+    {
+      "data": {
+        "inspector_name": "Jane Doe",
+        "pole_id": "POLE-2024-002",
+        "inspection_date": "2024-10-21",
+        "voltage": 450,
+        "pole_condition": "Fair",
+        "remarks": "High voltage detected, requires immediate attention"
+      },
+      "notifications": [
+        {
+          "field": "voltage",
+          "message": "Voltage Reading (V) (450) exceeds threshold of 400",
+          "value": 450,
+          "threshold": 400,
+          "condition": ">400"
+        }
+      ],
+      "submittedAt": "2024-10-21T14:15:00.000Z"
+    },
+    {
+      "data": {
+        "inspector_name": "Aarzoo",
+        "pole_id": "POLE-2024-001",
+        "inspection_date": "2024-06-06",
+        "voltage": "450",
+        "pole_condition": "Good",
+        "photos": "Goblin-transformed.jpeg",
+        "remarks": "Work done"
+      },
+      "notifications": [
+        {
+          "field": "voltage",
+          "message": "Voltage Reading (V) (450) exceeds threshold of 400",
+          "value": 450,
+          "threshold": 400,
+          "condition": ">400"
+        }
+      ],
+      "submittedAt": "2025-10-25T18:04:21.874Z"
+    }
+  ],
+  "demo_equipment_maintenance": [
+    {
+      "data": {
+        "equipment_id": "EQ-2024-101",
+        "technician_name": "Mike Johnson",
+        "technician_email": "mike.j@example.com",
+        "maintenance_date": "2024-10-22",
+        "hours_worked": 4,
+        "parts_replaced": "Oil filter, air filter",
+        "condition_rating": "Good",
+        "requires_followup": false
+      },
+      "notifications": [],
+      "submittedAt": "2024-10-22T09:00:00.000Z"
+    }
+  ],
+  "demo_safety_audit": [
+    {
+      "data": {
+        "auditor_name": "Sarah Williams",
+        "site_location": "Construction Site A - Downtown",
+        "audit_date": "2024-10-23",
+        "safety_score": 85,
+        "hazards_identified": "Exposed wiring in section B, Missing safety barriers near excavation",
+        "corrective_actions": "Install cable covers, Set up safety barriers with warning signs"
+      },
+      "notifications": [],
+      "submittedAt": "2024-10-23T11:45:00.000Z"
+    },
+    {
+      "data": {
+        "auditor_name": "Robert Brown",
+        "site_location": "Warehouse District - East Wing",
+        "audit_date": "2024-10-24",
+        "safety_score": 65,
+        "hazards_identified": "Inadequate lighting, Slippery floor surfaces, Missing fire extinguishers",
+        "corrective_actions": "Install additional lighting, Apply anti-slip coating, Purchase and install fire extinguishers"
+      },
+      "notifications": [
+        {
+          "field": "safety_score",
+          "message": "Safety Score (0-100) (65) is below threshold of 70",
+          "value": 65,
+          "threshold": 70,
+          "condition": "<70"
+        }
+      ],
+      "submittedAt": "2024-10-24T16:20:00.000Z"
+    },
+    {
+      "data": {
+        "auditor_name": "alex",
+        "site_location": "mumbai",
+        "audit_date": "2025-10-03",
+        "safety_score": "60",
+        "hazards_identified": "none",
+        "corrective_actions": "hello",
+        "audit_photos": "Goblin-transformed.jpeg"
+      },
+      "notifications": [
+        {
+          "field": "safety_score",
+          "message": "Safety Score (0-100) (60) is below threshold of 70",
+          "value": 60,
+          "threshold": 70,
+          "condition": "<70"
+        }
+      ],
+      "submittedAt": "2025-10-25T18:19:56.627Z"
+    }
+  ],
+  "schema_1762527032572_hx2swoerm": [
+    {
+      "data": {
+        "name": "John Doe",
+        "age": "18"
+      },
+      "notifications": [],
+      "submittedAt": "2025-11-07T14:50:53.095Z"
+    },
+    {
+      "data": {
+        "name": "John Doe",
+        "age": "18"
+      },
+      "notifications": [],
+      "submittedAt": "2025-11-07T14:51:12.837Z"
+    }
+  ]
+}
