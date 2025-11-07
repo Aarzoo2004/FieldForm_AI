@@ -1,0 +1,33 @@
+{
+  "name": "fieldform-ai-backend",
+  "version": "1.0.0",
+  "description": "AI-powered no-code field form generator backend",
+  "main": "src/server.js",
+ 
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "seed": "node src/seed.js"
+  },
+  "keywords": [
+    "ai",
+    "no-code",
+    "forms",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "openai": "^6.7.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10"
+  }
+}
