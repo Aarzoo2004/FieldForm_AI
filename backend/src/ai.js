@@ -66,6 +66,9 @@ ${title ? `Form title should be: ${title}` : ''}
     let content = response.text.trim();
     
     console.log('📥 Raw Gemini response preview:', content.substring(0, 150) + '...');
+
+    // Fix property names automatically
+    content = content.replace(/([{,]\s*)([a-zA-Z0-9_]+)\s*:/g, '$1"$2":');
     
     // Remove markdown code blocks if present
     content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '');

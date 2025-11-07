@@ -13,10 +13,6 @@ yarn-error.log*
 logs
 *.log
 
-# Runtime data
-data/
-*.json
-
 # Coverage
 coverage/
 
